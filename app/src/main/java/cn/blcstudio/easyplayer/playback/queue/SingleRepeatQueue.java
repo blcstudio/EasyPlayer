@@ -4,10 +4,6 @@ import java.util.List;
 
 import cn.blcstudio.easyplayer.model.Music;
 
-/**
- * Created by ginger on 2016/6/15.
- */
-
 public class SingleRepeatQueue extends BaseQueue {
 
     @Override

@@ -1,9 +1,5 @@
 package cn.blcstudio.easyplayer.model;
 
-/**
- * Created by ginger on 2016/6/15.
- */
-
 public class Music {
 
     // music information

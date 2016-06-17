@@ -5,10 +5,6 @@ import java.util.Random;
 
 import cn.blcstudio.easyplayer.model.Music;
 
-/**
- * Created by ginger on 2016/6/15.
- */
-
 public class RandomPlayQueue extends BaseQueue {
 
     protected  int prev;

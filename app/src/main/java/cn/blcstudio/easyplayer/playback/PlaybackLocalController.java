@@ -12,10 +12,6 @@ import cn.blcstudio.easyplayer.MusicServiceHolder;
 import cn.blcstudio.easyplayer.model.Music;
 import cn.blcstudio.easyplayer.playback.queue.QueueHolder;
 
-/**
- * Created by ginger on 2016/6/15.
- */
-
 public class PlaybackLocalController implements PlaybackController {
 
     // queue holder

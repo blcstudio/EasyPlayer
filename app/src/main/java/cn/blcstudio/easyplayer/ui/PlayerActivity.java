@@ -27,10 +27,6 @@ public class PlayerActivity extends FragmentActivity
 
     private MusicService musicService;
 
-    /*public MusicService getMusicService() {
-        return musicService;
-    }*/
-
     @Override
     protected void onResume() {
         super.onResume();

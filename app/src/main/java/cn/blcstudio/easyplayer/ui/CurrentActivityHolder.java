@@ -2,9 +2,6 @@ package cn.blcstudio.easyplayer.ui;
 
 import android.app.Activity;
 
-/**
- * Created by ginger on 2016/6/17.
- */
 public class CurrentActivityHolder {
 
     // singleton

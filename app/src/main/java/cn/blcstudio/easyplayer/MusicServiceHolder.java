@@ -13,9 +13,6 @@ import cn.blcstudio.easyplayer.model.Music;
 import cn.blcstudio.easyplayer.ui.CurrentActivityHolder;
 import cn.blcstudio.easyplayer.util.MediaUtil;
 
-/**
- * Created by ginger on 2016/6/16.
- */
 public class MusicServiceHolder {
 
     public static final int NOTIFICATION_ID = 19;
