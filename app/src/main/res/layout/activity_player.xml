@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ui.PlayerActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/list_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/controller_container">
+
+        <fragment android:name="cn.blcstudio.easyplayer.ui.ListFragment"
+            android:id="@+id/fragment_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_list"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_play"
+        android:src="@drawable/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:backgroundTint="@color/accent_material_light"
+        fabSize="normal"
+        app:rippleColor="@color/accent_material_dark"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/list_container"
+        android:layout_marginBottom="@dimen/fab_play_margin_bottom"
+        android:layout_marginEnd="@dimen/fab_play_margin_right"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/controller_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/playback_margin_top">
+
+        <fragment android:name="cn.blcstudio.easyplayer.ui.PlaybackFragment"
+            android:id="@+id/fragment_playback_controller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            tools:layout="@layout/fragment_playback" />
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

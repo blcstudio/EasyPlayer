@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.blcstudio.easyplayer.ui.ListFragment">
+
+    <LinearLayout
+        android:id="@+id/order_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/order_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button_order_by_name"
+            style="?android:buttonBarButtonStyle"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/order_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button_order_by_singer"
+            style="?android:buttonBarButtonStyle"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/order_album"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button_order_by_album"
+            style="?android:buttonBarButtonStyle"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/list_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_button_container">
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fullscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.blcstudio.easyplayer.ui.FullscreenActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/full_album_art"
+        android:src="@drawable/default_album"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/full_title"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:transitionName="transition_album_cover"
+        android:layout_margin="@dimen/full_album_art_margin"/>
+
+    <TextView
+        android:id="@+id/full_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/full_singer"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="I Love WYQ as a song has a long long name"
+        android:layout_marginStart="@dimen/full_process_margin_start"
+        android:layout_marginEnd="@dimen/full_process_margin_end"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/full_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/full_seek"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="JSF as a singer has a long long name"
+        android:layout_marginStart="@dimen/full_process_margin_start"
+        android:layout_marginEnd="@dimen/full_process_margin_end"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse" />
+
+    <TextView
+        android:id="@+id/cur_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/full_playback"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="00:00"
+        android:layout_marginStart="@dimen/full_process_margin_start"
+        android:textAppearance="?android:attr/textAppearanceSmallInverse" />
+
+    <SeekBar
+        android:id="@+id/full_seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/full_playback"
+        android:layout_toEndOf="@id/cur_time"
+        android:layout_toStartOf="@+id/total_time"
+        android:max="100"
+        android:layout_marginTop="@dimen/full_process_margin_top"
+        android:layout_marginStart="@dimen/full_process_margin_start"
+        android:layout_marginEnd="@dimen/full_process_margin_end"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/full_playback"
+        android:layout_alignParentEnd="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="03:00"
+        android:layout_marginEnd="@dimen/full_process_margin_end"
+        android:textAppearance="?android:attr/textAppearanceSmallInverse" />
+
+    <LinearLayout
+        android:id="@+id/full_playback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/full_playback_margin_top"
+        android:layout_marginBottom="@dimen/full_playback_margin_bottom">
+
+        <ImageButton
+            android:id="@+id/full_prev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/playback_button_padding"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/prev"
+            android:tint="@color/accent_material_light"
+            android:contentDescription="@string/content_desc_prev"/>
+
+        <ImageButton
+            android:id="@+id/full_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/playback_button_padding"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/play"
+            android:tint="@color/accent_material_light"
+            android:contentDescription="@string/content_desc_play"/>
+
+        <ImageButton
+            android:id="@+id/full_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/playback_button_padding"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/next"
+            android:tint="@color/accent_material_light"
+            android:contentDescription="@string/content_desc_next"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

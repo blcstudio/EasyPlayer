@@ -1,0 +1,30 @@
+<resources>
+    <!-- playback -->
+    <dimen name="activity_horizontal_margin">4dp</dimen>
+    <dimen name="activity_vertical_margin">4dp</dimen>
+    <dimen name="playback_controller_padding">8dp</dimen>
+    <dimen name="playback_controller_albumart_size">64dp</dimen>
+    <dimen name="playback_controller_albumart_horizontal_margin">8dp</dimen>
+    <dimen name="playback_margin_top">4dp</dimen>
+    <dimen name="playback_button_padding">8dp</dimen>
+    <dimen name="full_playback_margin_top">8dp</dimen>
+    <dimen name="full_playback_margin_bottom">16dp</dimen>
+
+    <!-- list -->
+    <dimen name="media_item_height">48dp</dimen>
+    <dimen name="media_item_width">48dp</dimen>
+    <dimen name="media_item_icon_margin_start">8dp</dimen>
+    <dimen name="media_item_text_margin_start">12dp</dimen>
+    <dimen name="media_item_padding_top">16dp</dimen>
+    <dimen name="media_item_padding_bottom">0dp</dimen>
+
+    <!-- fab -->
+    <dimen name="fab_play_margin_bottom">-20dp</dimen>
+    <dimen name="fab_play_margin_right">40dp</dimen>
+
+    <!-- fullscreen -->
+    <dimen name="full_process_margin_top">24dp</dimen>
+    <dimen name="full_process_margin_start">16dp</dimen>
+    <dimen name="full_process_margin_end">16dp</dimen>
+    <dimen name="full_album_art_margin">56dp</dimen>
+</resources>

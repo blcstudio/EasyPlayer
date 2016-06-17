@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Easy Player</string>
+    <string name="title_activity_fullscreen">Fullscreen Player</string>
+
+    <!-- layout item description -->
+    <string name="content_desc_play_queue">Queue control button</string>
+    <string name="content_desc_album_art">Album art image button</string>
+    <string name="content_desc_list_item_eq">Music album artwork</string>
+    <string name="content_desc_next">Next song button</string>
+    <string name="content_desc_prev">Previous song button</string>
+    <string name="content_desc_play">Play music button</string>
+    <string name="content_desc_full_background">Background picture</string>
+
+    <!-- button string -->
+    <string name="button_order_by_name">name</string>
+    <string name="button_order_by_singer">singer</string>
+    <string name="button_order_by_album">album</string>
+
+</resources>
