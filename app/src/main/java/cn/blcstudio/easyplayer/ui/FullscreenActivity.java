@@ -1,11 +1,8 @@
 package cn.blcstudio.easyplayer.ui;
 
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.app.FragmentActivity;
 import android.text.format.DateFormat;
 import android.view.View;
@@ -23,13 +20,15 @@ import cn.blcstudio.easyplayer.util.MediaUtil;
 public class FullscreenActivity extends FragmentActivity {
 
     // display view
-    ImageView albumArt;
-    TextView title, singer;
+    private ImageView albumArt;
+    private TextView title, singer;
     // seek bar
-    TextView curTime, totalTime;
-    SeekBar seekBar;
+    private TextView curTime, totalTime;
+    private SeekBar seekBar;
     // playback button
-    ImageView btnPlay, btnPrev, btnNext;
+    private ImageView btnPlay;
+    private ImageView btnPrev;
+    private ImageView btnNext;
 
     private boolean isDraging = false;
 
@@ -109,7 +108,7 @@ public class FullscreenActivity extends FragmentActivity {
             if (!isDraging) {
                 seekBar.setProgress(musicService.getCurPosition() * seekBar.getMax() / musicService.getTotalTime());
                 curTime.setText(DateFormat.format("mm:ss", musicService.getCurPosition()));
-            };
+            }
             handler.postDelayed(this, deplayedTime);
         }
     };
