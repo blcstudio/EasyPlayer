@@ -11,6 +11,7 @@ import android.widget.RemoteViews;
 
 import cn.blcstudio.easyplayer.model.Music;
 import cn.blcstudio.easyplayer.ui.CurrentActivityHolder;
+import cn.blcstudio.easyplayer.ui.FullscreenActivity;
 import cn.blcstudio.easyplayer.util.MediaUtil;
 
 public class MusicServiceHolder {
@@ -67,6 +68,11 @@ public class MusicServiceHolder {
         Intent nextIntent = new Intent(context, nextButtonListener.class);
         PendingIntent nextPendingIntent = PendingIntent.getBroadcast(context, 0, nextIntent, 0);
         remoteViews.setOnClickPendingIntent(R.id.remote_next, nextPendingIntent);
+        // album art
+        Intent albumIntent = new Intent(context, FullscreenActivity.class);
+        albumIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK| Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
+        PendingIntent albumPendingIntent = PendingIntent.getActivity(context, 0, albumIntent, 0);
+        remoteViews.setOnClickPendingIntent(R.id.remote_album, albumPendingIntent);
 
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         notificationManager.notify(MusicServiceHolder.NOTIFICATION_ID, builder.build());

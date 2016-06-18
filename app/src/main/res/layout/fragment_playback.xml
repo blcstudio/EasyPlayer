@@ -29,7 +29,7 @@
 
         <TextView
             android:id="@+id/title"
-            android:text="I Love WYQ as a song has a long long name"
+            android:text="WYQ and JSF love each other as a song has a long long name"
             android:ellipsize="end"
             android:maxLines="1"
             android:layout_width="wrap_content"
@@ -39,7 +39,7 @@
 
         <TextView
             android:id="@+id/artist"
-            android:text="JSF as a singer has a long long name"
+            android:text="WYQ and JSF as a singer has a long long name"
             android:ellipsize="end"
             android:maxLines="1"
             android:layout_width="wrap_content"
